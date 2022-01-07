@@ -11,7 +11,7 @@ dockerImage = ''
     stage('Checkout') {
       steps {
         script {
-           git credentialsId: 'jenkins-user-github', url: 'https://github.com/spring-projects/spring-petclinic.git'
+           git credentialsId: 'jenkins-user-github', url: 'https://github.com/d2ssharma6/spring-petclinic.git'
            sh "git checkout master"
            dir('spring-petclinic') {
             sh "pwd"
